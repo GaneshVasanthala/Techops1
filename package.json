@@ -3,13 +3,26 @@
   "version": "1.0.0",
   "description": "A basic Node.js project",
   "main": "index.js",
+<<<<<<< HEAD
   "scripts": {
     "start": "node index.js",
     "build": "echo \"Build complete\"",
     "test": "echo \"No tests yet\" && exit 0"
+=======
+  "homepage": "https://GaneshVasanthala.github.io/Techops1",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
+>>>>>>> 43d5051 (deploy new)
   },
   "keywords": [],
   "author": "Your Name",
   "license": "ISC",
+<<<<<<< HEAD
   "dependencies": {}
+=======
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+>>>>>>> 43d5051 (deploy new)
 }
