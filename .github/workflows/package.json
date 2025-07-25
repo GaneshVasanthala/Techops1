@@ -1,12 +1,14 @@
 {
-  "name": "lenovo",
+  "name": "techops1",
   "version": "1.0.0",
+  "description": "A basic Node.js project",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"No tests yet\""
-},
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
-  "description": ""
+  "dependencies": {}
 }
