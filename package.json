@@ -5,15 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-<<<<<<< HEAD
-    "build": "echo \"Running build...\" && exit 0"
-  },
-  "keywords": [],
-=======
     "build": "echo \"Build complete\"",
     "test": "echo \"No tests yet\" && exit 0"
   },
->>>>>>> 8db8641 (new pipeline)
+  "keywords": [],
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {}
