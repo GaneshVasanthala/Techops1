@@ -1,0 +1,32 @@
+import random
+
+def puzzle_game():
+    """Simple number guessing puzzle game"""
+    secret_number = random.randint(1, 100)
+    attempts = 0
+    max_attempts = 7
+
+    print("🧩 Welcome to the Number Puzzle Game!")
+    print(f"I've picked a number between 1 and 100.")
+    print(f"You have {max_attempts} attempts to guess it.\n")
+
+    while attempts < max_attempts:
+        try:
+            guess = int(input("Enter your guess: "))
+            attempts += 1
+
+            if guess < secret_number:
+                print(f"Too low! Try again. ({max_attempts - attempts} attempts left)\n")
+            elif guess > secret_number:
+                print(f"Too high! Try again. ({max_attempts - attempts} attempts left)\n")
+            else:
+                print(f"🎉 Correct! You found it in {attempts} attempts!")
+                return
+
+        except ValueError:
+            print("Please enter a valid number.\n")
+
+    print(f"❌ Game Over! The number was {secret_number}.")
+
+if __name__ == "__main__":
+    puzzle_game()
